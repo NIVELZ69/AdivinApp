@@ -87,6 +87,7 @@ public class Interfaz extends Application {
 		
 		try {
 			respuesta = Integer.parseInt(numeroRespuesta.getText());
+			numeroRespuesta.setText("");
 			if(respuesta > 100 || respuesta < 1) {
 				errorAlert.show();
 			} else {
@@ -113,17 +114,6 @@ public class Interfaz extends Application {
 		
 		
 	}
-	
-	
-	/*private void onLimpiarAction(ActionEvent e) {
-		nombreText.setText("");
-		apellidosText.setText("");
-		edadText.setText("");
-		
-	}*/
-		
-		
-		
 		
 }
 
